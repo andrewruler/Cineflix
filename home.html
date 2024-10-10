@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <title>Cineflix</title>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li>
-                </li>
-                <li>
-                </li>
-                <li>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <h1>Sign In</h1>
-            <form>
-                <input type="text" name="Email or Username" placeholder="Email or Username">
-                <input type="text" name="search" placeholder="Search for movies">
-                <input type="submit" value="Search">
-            </form>
-        </div>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cineflix</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Sign In</h1>
+        <form>
+            <input type="text" name="user" placeholder="Email or Username">
+            <input type="text" name="pass" placeholder="Password">
+            <button type="button" value="Sign In">
+                <input type="text" name="rememberUser" value="remember me">
+                <a>Forgot password or username?</a>
+                <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+                <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID" data-callback="handleCredentialResponse">
+                </div>
+
+                <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline"
+                    data-text="signin_with" data-size="large">
+                </div>
+                <script src= "./googleIntegration.js"></script>
+        </form>
+    </div>
+</body>
+
 </html>
