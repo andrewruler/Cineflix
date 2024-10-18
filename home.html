@@ -3,28 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale =1.0>">
     <title>Cineflix</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel ="stylesheet" href = "nav.css">
+    <script src="chatbot.js" defer></script>
+
 </head>
 
 <body>
     <nav>
+        <img src="images\logo.png" alt="Cineflix logo" class ="logo">
         <ul>
-            <li> 
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="trending.html">Trending</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">Tv Shows</a></li>
         </ul>
+        <div class="dropdown">
+            <select name = "language">
+                <option value = "English">English</option>
+                <option value = "Chinese">Chinese</option>
+                <option value = "Tamil">Tamil</option>
+                <option value = "Arabic">Arabic</option>
+                <option value = "French">French</option>
+                <option value = "British">British</option>
+            </select>
+      </div>
     </nav>
-    <div>
-        <h1>Sign In</h1>
+    <div class = "signin">
+        <h1 id = "signintext">Sign In</h1>
         <form>
+            <div>
             <input type="text" name="user" placeholder="Email or Username">
             <input type="text" name="pass" placeholder="Password">
             <button type="button" value="Sign In">
-                <input type="text" name="rememberUser" value="remember me">
-                <a>Forgot password or username?</a>
+            <input type="checkbox" name="rememberUser" value="remember me">
+            <a>Remember User</a>
+            </div>
                 <script src="https://accounts.google.com/gsi/client" async defer></script>
 
                 <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID" data-callback="handleCredentialResponse">
@@ -36,6 +57,124 @@
                 <script src= "./googleIntegration.js"></script>
         </form>
     </div>
+    <div class="offer">
+        <h1>LIMITED OFFER</h1>
+        <p>Sign up and get 110% off your first month</p>
+        <button>Learn more</button>
+        <img src="images\offer.png" alt="offer">
+    </div>
+    <div>  
+        
+    </div>
+    <div class="trending">
+        <h1>Trending</h1>
+        <div class="trending-list">
+            <img src="images\trending1.png" alt="trending1"class="trending1">
+            <img src="images\trending2.png" alt="trending2"class="trending2">
+            <img src="images\trending3.png" alt="trending3"class="trending3">
+            <img src="images\trending4.png" alt="trending4"class="trending4">
+            <img src="images\trending5.png" alt="trending5"class="trending5">
+            <img src="images\trending6.png" alt="trending6"class="trending6">
+            <img src="images\trending7.png" alt="trending7"class="trending7">
+            <img src="images\trending8.png" alt="trending8"class="trending8">
+            <img src="images\trending9.png" alt="trending9"class="trending9">
+            <img src="images\trending10.png" alt="trending10"class="trending10">
+        </div>
+    </div>
+    <div class = "reasons to join">
+        <h1>Reasons to join Cineflix</h1>
+        <div class="reasons to join-list">
+            <div class = "reason1">
+                <h1>1. Safe</h1>
+                <p>Cineflix is safe. Cineflix provides you with the latest movies and tv shows. It also provides you with the latest news and information.</p>
+                <img src="images/safe.png" alt="safe">
+            </div>
+            <div class = "reason2">
+                <h1>2. Fast</h1>
+                <p>Cineflix is fast. Cineflix provides you with the latest movies and tv shows. It also provides you with the latest news and information.</p>
+                <img src="images/fast.png" alt="fast">
+            </div>
+            <div class = "reason3">
+                <h1>3. Reliable</h1>
+                <p>Cineflix is reliable. Cineflix provides you with the latest movies and tv shows. It also provides you with the latest news and information.</p>
+                <img src="images/reliable.png" alt="reliable">
+            </div>
+            <div class = "reason4">
+                <h1>4. User-friendly</h1>
+                <p>Cineflix is user-friendly. Cineflix provides you with the latest movies and tv shows. It also provides you with the latest news and information.</p>
+                <img src="images/userfriendly.png" alt="user-friendly">
+            </div>
+        </div>
+    </div>
+    <div class = "frequently asked questions">
+        <h1>Frequently Asked Questions</h1>
+        <div class = "question-container">
+            <div class = "question">
+                <h1>Q: What is Cineflix?</h1>
+            </div>
+            <div class = "answer">
+                <p>A: Cineflix is a website that provides you with the latest movies and tv shows. It also provides you with the latest news and information.</p>
+            </div>
+        </div>
+        <div class = "question-container">
+            <div class = "question">
+                <h1>Q: How does Cineflix work?</h1>
+            </div>  
+            <div class = "answer">
+                <p>A: Cineflix works by providing you with the latest movies and tv shows. It also provides you with the latest news and information. </p>
+            </div>
+        </div>
+        <div class = "question-container">
+            <div class = "question">
+                <h1>Q: What are the features of Cineflix?</h1>
+            </div>
+            <div class = "answer">
+                <p>A: Cineflix provides you with the latest movies and tv shows. It also provides you with the latest news and information. </p>
+            </div>
+        </div>
+        <div class = "question-container">
+            <div class = "question">
+                <h1>Q: Is Cineflix safe?</h1>
+            </div>
+            <div class = "answer">
+                <p>A: Cineflix is safe. Cineflix provides you with the latest movies and tv shows. It also provides you with the latest news and information. </p>
+            </div>
+        </div>
+    </div>
+    <div class="chatbot-container">   
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="chatbot">
+            <header>
+              <h2>Chatbot</h2>
+              <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+              <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋<br>How can I help you today?</p>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+              <span id="send-btn" class="material-symbols-rounded"><button type="submit">send</button></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>Questions?</h1>
+        <p1>Contact us at:<a href="mailto:3gkKZ@example.com">3gkKZ@example.com</a></p1>
+        <img class ="logo" src="images\logo.png" alt="Cineflix logo">
+        <p>© 2022 Cineflix. All rights reserved.</p>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
